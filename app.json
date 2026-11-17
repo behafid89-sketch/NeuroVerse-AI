@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "NeuroVerse AI",
+    "slug": "neuroverse-ai",
+    "version": "0.1.0",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#070B24",
+    "newArchEnabled": false,
+    "splash": {
+      "backgroundColor": "#070B24"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.neuroverse.ai"
+    },
+    "android": {
+      "package": "com.neuroverse.ai",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B0F35"
+      },
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "NeuroVerse utilise vos photos uniquement pour créer des pictogrammes personnels, stockés sur l'appareil.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "icon": "./assets/icon.png"
+  }
+}
